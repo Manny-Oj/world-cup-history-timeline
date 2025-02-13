@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Cup Timeline</title>
+    <style>
+      body {
+        font-family: "Adobe Caslon Pro", serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+      }
+      .timeline {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 10px;
+      }
+      .year {
+        background: #fff;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .year h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        margin: 0;
+      }
+      .year-content {
+        display: none;
+        margin-top: 10px;
+      }
+      .year-content img {
+        width: 30px;
+        margin-right: 10px;
+      }
+      .plus-sign {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+      }
+      @media (max-width: 600px) {
+        .timeline {
+          padding: 10px;
+        }
+        .year h3 {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timeline">
+      <div class="year">
+        <h3>1930 World Cup: Uruguay <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/uy.png"
+            alt="Uruguay flag"
+          />
+          <p><strong>Host:</strong> Uruguay</p>
+          <p><strong>Champion:</strong> Uruguay</p>
+          <p><strong>Golden Boot:</strong> Guillermo Stábile</p>
+          <p><strong>Key Player:</strong> José Nasazzi</p>
+          <p>
+            <strong>Key Moment:</strong> First-ever FIFA World Cup final,
+            Uruguay defeated Argentina 4-2.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1934 World Cup: Italy <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/it.png"
+            alt="Italy flag"
+          />
+          <p><strong>Host:</strong> Italy</p>
+          <p><strong>Champion:</strong> Italy</p>
+          <p><strong>Golden Boot:</strong> Angelo Schiavio</p>
+          <p><strong>Key Player:</strong> Giuseppe Meazza</p>
+          <p>
+            <strong>Key Moment:</strong> Italy wins its first title under coach
+            Vittorio Pozzo.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1938 World Cup: France <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/fr.png"
+            alt="France flag"
+          />
+          <p><strong>Host:</strong> France</p>
+          <p><strong>Champion:</strong> Italy</p>
+          <p><strong>Golden Boot:</strong> Leônidas da Silva</p>
+          <p><strong>Key Player:</strong> Silvio Piola</p>
+          <p>
+            <strong>Key Moment:</strong> Italy becomes the first team to win
+            back-to-back titles.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1950 World Cup: Brazil <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/br.png"
+            alt="Brazil flag"
+          />
+          <p><strong>Host:</strong> Brazil</p>
+          <p><strong>Champion:</strong> Uruguay</p>
+          <p><strong>Golden Boot:</strong> Ademir</p>
+          <p><strong>Key Player:</strong> Alcides Ghiggia</p>
+          <p>
+            <strong>Key Moment:</strong> Uruguay's shocking "Maracanazo" victory
+            over Brazil.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1954 World Cup: Switzerland <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/ch.png"
+            alt="Switzerland flag"
+          />
+          <p><strong>Host:</strong> Switzerland</p>
+          <p><strong>Champion:</strong> West Germany</p>
+          <p><strong>Golden Boot:</strong> Sándor Kocsis</p>
+          <p><strong>Key Player:</strong> Fritz Walter</p>
+          <p>
+            <strong>Key Moment:</strong> West Germany’s "Miracle of Bern" win
+            over Hungary.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1958 World Cup: Sweden <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/se.png"
+            alt="Sweden flag"
+          />
+          <p><strong>Host:</strong> Sweden</p>
+          <p><strong>Champion:</strong> Brazil</p>
+          <p><strong>Golden Boot:</strong> Just Fontaine</p>
+          <p><strong>Key Player:</strong> Pelé</p>
+          <p>
+            <strong>Key Moment:</strong> Pelé's debut as a 17-year-old
+            sensation.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1962 World Cup: Chile <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/cl.png"
+            alt="Chile flag"
+          />
+          <p><strong>Host:</strong> Chile</p>
+          <p><strong>Champion:</strong> Brazil</p>
+          <p><strong>Golden Boot:</strong> Garrincha (joint top scorer)</p>
+          <p><strong>Key Player:</strong> Garrincha</p>
+          <p>
+            <strong>Key Moment:</strong> Brazil wins its second title despite
+            Pelé's injury.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1966 World Cup: England <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/gb.png"
+            alt="England flag"
+          />
+          <p><strong>Host:</strong> England</p>
+          <p><strong>Champion:</strong> England</p>
+          <p><strong>Golden Boot:</strong> Eusébio</p>
+          <p><strong>Key Player:</strong> Bobby Charlton</p>
+          <p>
+            <strong>Key Moment:</strong> Geoff Hurst's hat-trick leads England
+            to its first title.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1970 World Cup: Mexico <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/mx.png"
+            alt="Mexico flag"
+          />
+          <p><strong>Host:</strong> Mexico</p>
+          <p><strong>Champion:</strong> Brazil</p>
+          <p><strong>Golden Boot:</strong> Gerd Müller</p>
+          <p><strong>Key Player:</strong> Pelé</p>
+          <p>
+            <strong>Key Moment:</strong> Brazil wins its third title with one of
+            the greatest teams in history.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1974 World Cup: West Germany <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/de.png"
+            alt="West Germany flag"
+          />
+          <p><strong>Host:</strong> West Germany</p>
+          <p><strong>Champion:</strong> West Germany</p>
+          <p><strong>Golden Boot:</strong> Grzegorz Lato</p>
+          <p><strong>Key Player:</strong> Johan Cruyff</p>
+          <p>
+            <strong>Key Moment:</strong> The rise of "Total Football" and West
+            Germany's victory over the Netherlands.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1978 World Cup: Argentina <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/ar.png"
+            alt="Argentina flag"
+          />
+          <p><strong>Host:</strong> Argentina</p>
+          <p><strong>Champion:</strong> Argentina</p>
+          <p><strong>Golden Boot:</strong> Mario Kempes</p>
+          <p><strong>Key Player:</strong> Mario Kempes</p>
+          <p>
+            <strong>Key Moment:</strong> Mario Kempes leads Argentina to its
+            first title in front of home fans.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1982 World Cup: Spain <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/es.png"
+            alt="Spain flag"
+          />
+          <p><strong>Host:</strong> Spain</p>
+          <p><strong>Champion:</strong> Italy</p>
+          <p><strong>Golden Boot:</strong> Paolo Rossi</p>
+          <p><strong>Key Player:</strong> Paolo Rossi</p>
+          <p>
+            <strong>Key Moment:</strong> Paolo Rossi's hat-trick eliminates
+            Brazil in a memorable match.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1986 World Cup: Mexico <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/mx.png"
+            alt="Mexico flag"
+          />
+          <p><strong>Host:</strong> Mexico</p>
+          <p><strong>Champion:</strong> Argentina</p>
+          <p><strong>Golden Boot:</strong> Gary Lineker</p>
+          <p><strong>Key Player:</strong> Diego Maradona</p>
+          <p>
+            <strong>Key Moment:</strong> Maradona's "Hand of God" and "Goal of
+            the Century" highlight the tournament.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1966 World Cup: England <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/gb.png"
+            alt="England flag"
+          />
+          <p><strong>Host:</strong> England</p>
+          <p><strong>Champion:</strong> England</p>
+          <p><strong>Golden Boot:</strong> Eusébio</p>
+          <p><strong>Key Player:</strong> Bobby Charlton</p>
+          <p>
+            <strong>Key Moment:</strong> Geoff Hurst's hat-trick leads England
+            to its first title.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1970 World Cup: Mexico <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/mx.png"
+            alt="Mexico flag"
+          />
+          <p><strong>Host:</strong> Mexico</p>
+          <p><strong>Champion:</strong> Brazil</p>
+          <p><strong>Golden Boot:</strong> Gerd Müller</p>
+          <p><strong>Key Player:</strong> Pelé</p>
+          <p>
+            <strong>Key Moment:</strong> Brazil wins its third title with one of
+            the greatest teams in history.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1974 World Cup: West Germany <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/de.png"
+            alt="West Germany flag"
+          />
+          <p><strong>Host:</strong> West Germany</p>
+          <p><strong>Champion:</strong> West Germany</p>
+          <p><strong>Golden Boot:</strong> Grzegorz Lato</p>
+          <p><strong>Key Player:</strong> Johan Cruyff</p>
+          <p>
+            <strong>Key Moment:</strong> The rise of "Total Football" and West
+            Germany's victory over the Netherlands.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1978 World Cup: Argentina <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/ar.png"
+            alt="Argentina flag"
+          />
+          <p><strong>Host:</strong> Argentina</p>
+          <p><strong>Champion:</strong> Argentina</p>
+          <p><strong>Golden Boot:</strong> Mario Kempes</p>
+          <p><strong>Key Player:</strong> Mario Kempes</p>
+          <p>
+            <strong>Key Moment:</strong> Mario Kempes leads Argentina to its
+            first title in front of home fans.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1982 World Cup: Spain <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/es.png"
+            alt="Spain flag"
+          />
+          <p><strong>Host:</strong> Spain</p>
+          <p><strong>Champion:</strong> Italy</p>
+          <p><strong>Golden Boot:</strong> Paolo Rossi</p>
+          <p><strong>Key Player:</strong> Paolo Rossi</p>
+          <p>
+            <strong>Key Moment:</strong> Paolo Rossi's hat-trick eliminates
+            Brazil in a memorable match.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1986 World Cup: Mexico <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/mx.png"
+            alt="Mexico flag"
+          />
+          <p><strong>Host:</strong> Mexico</p>
+          <p><strong>Champion:</strong> Argentina</p>
+          <p><strong>Golden Boot:</strong> Gary Lineker</p>
+          <p><strong>Key Player:</strong> Diego Maradona</p>
+          <p>
+            <strong>Key Moment:</strong> Maradona's "Hand of God" and "Goal of
+            the Century" highlight the tournament.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1990 World Cup: Italy <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/it.png"
+            alt="Italy flag"
+          />
+          <p><strong>Host:</strong> Italy</p>
+          <p><strong>Champion:</strong> West Germany</p>
+          <p><strong>Golden Boot:</strong> Salvatore Schillaci</p>
+          <p><strong>Key Player:</strong> Lothar Matthäus</p>
+          <p>
+            <strong>Key Moment:</strong> West Germany defeats Argentina in a
+            rematch of the 1986 final.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1994 World Cup: United States <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/us.png"
+            alt="United States flag"
+          />
+          <p><strong>Host:</strong> United States</p>
+          <p><strong>Champion:</strong> Brazil</p>
+          <p><strong>Golden Boot:</strong> Hristo Stoichkov & Oleg Salenko</p>
+          <p><strong>Key Player:</strong> Romário</p>
+          <p>
+            <strong>Key Moment:</strong> Brazil wins in a dramatic penalty
+            shootout against Italy.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>1998 World Cup: France <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/fr.png"
+            alt="France flag"
+          />
+          <p><strong>Host:</strong> France</p>
+          <p><strong>Champion:</strong> France</p>
+          <p><strong>Golden Boot:</strong> Davor Šuker</p>
+          <p><strong>Key Player:</strong> Zinedine Zidane</p>
+          <p>
+            <strong>Key Moment:</strong> Zidane scores two headers in the final
+            to secure France's first title.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>
+          2002 World Cup: South Korea and Japan <span class="plus-sign">+</span>
+        </h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/kr.png"
+            alt="South Korea flag"
+          />
+          <img
+            src="https://flagpedia.net/data/flags/h80/jp.png"
+            alt="Japan flag"
+          />
+          <p><strong>Host:</strong> South Korea and Japan</p>
+          <p><strong>Champion:</strong> Brazil</p>
+          <p><strong>Golden Boot:</strong> Ronaldo</p>
+          <p><strong>Key Player:</strong> Ronaldo</p>
+          <p>
+            <strong>Key Moment:</strong> Ronaldo scores twice in the final,
+            redeeming himself from 1998.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>2006 World Cup: Germany <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/de.png"
+            alt="Germany flag"
+          />
+          <p><strong>Host:</strong> Germany</p>
+          <p><strong>Champion:</strong> Italy</p>
+          <p><strong>Golden Boot:</strong> Miroslav Klose</p>
+          <p><strong>Key Player:</strong> Fabio Cannavaro</p>
+          <p>
+            <strong>Key Moment:</strong> Italy wins a tense final against
+            France, featuring Zidane's infamous headbutt.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>2010 World Cup: South Africa <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/za.png"
+            alt="South Africa flag"
+          />
+          <p><strong>Host:</strong> South Africa</p>
+          <p><strong>Champion:</strong> Spain</p>
+          <p><strong>Golden Boot:</strong> Thomas Müller</p>
+          <p><strong>Key Player:</strong> Andrés Iniesta</p>
+          <p>
+            <strong>Key Moment:</strong> Iniesta's extra-time goal secures
+            Spain's first World Cup title.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>2014 World Cup: Brazil <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/br.png"
+            alt="Brazil flag"
+          />
+          <p><strong>Host:</strong> Brazil</p>
+          <p><strong>Champion:</strong> Germany</p>
+          <p><strong>Golden Boot:</strong> James Rodríguez</p>
+          <p><strong>Key Player:</strong> Manuel Neuer</p>
+          <p>
+            <strong>Key Moment:</strong> Germany humiliates Brazil 7-1 in the
+            semifinals and wins in extra time against Argentina.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>2018 World Cup: Russia <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/ru.png"
+            alt="Russia flag"
+          />
+          <p><strong>Host:</strong> Russia</p>
+          <p><strong>Champion:</strong> France</p>
+          <p><strong>Golden Boot:</strong> Harry Kane</p>
+          <p><strong>Key Player:</strong> Kylian Mbappé</p>
+          <p>
+            <strong>Key Moment:</strong> France defeats Croatia 4-2 in a
+            thrilling final, with Mbappé becoming the youngest player to score
+            in a final since Pelé.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>2022 World Cup: Qatar <span class="plus-sign">+</span></h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/qa.png"
+            alt="Qatar flag"
+          />
+          <p><strong>Host:</strong> Qatar</p>
+          <p><strong>Champion:</strong> Argentina</p>
+          <p><strong>Golden Boot:</strong> Lionel Messi</p>
+          <p><strong>Key Player:</strong> Lionel Messi</p>
+          <p>
+            <strong>Key Moment:</strong> Messi leads Argentina to victory in a
+            dramatic penalty shootout against France, securing his legacy as one
+            of the greatest players ever.
+          </p>
+        </div>
+      </div>
+
+      <div class="year">
+        <h3>
+          2026 World Cup: Canada, Mexico, United States
+          <span class="plus-sign">+</span>
+        </h3>
+        <div class="year-content">
+          <img
+            src="https://flagpedia.net/data/flags/h80/ca.png"
+            alt="Canada flag"
+          />
+          <img
+            src="https://flagpedia.net/data/flags/h80/mx.png"
+            alt="Mexico flag"
+          />
+          <img
+            src="https://flagpedia.net/data/flags/h80/us.png"
+            alt="United States flag"
+          />
+          <p><strong>Host:</strong> Canada, Mexico, United States</p>
+          <p><strong>Champion:</strong> TBD</p>
+          <p><strong>Golden Boot:</strong> TBD</p>
+          <p><strong>Key Player:</strong> TBD</p>
+          <p><strong>Key Moment:</strong> TBD</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".year h3").forEach((h3) => {
+        h3.addEventListener("click", () => {
+          const content = h3.nextElementSibling;
+          const isVisible = content.style.display === "block";
+          document
+            .querySelectorAll(".year-content")
+            .forEach((el) => (el.style.display = "none"));
+          content.style.display = isVisible ? "none" : "block";
+        });
+      });
+    </script>
+  </body>
+</html>
